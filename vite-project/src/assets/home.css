@@ -1,0 +1,366 @@
+.sch{
+position: relative;
+right: 30px
+
+}
+.icons i{
+   gap: 30px;
+   position: relative;
+   right: 80%;
+
+}
+.bar , a{
+    position: relative;
+    left: 18%;
+}
+
+
+
+.head{
+    color: rgba(0, 53, 75, 1);
+font-family: 'Lucida Sans';
+font-size: 30px;
+ text-transform: capitalize;
+ font-weight: bolder;
+
+}
+
+.first p{
+    color: white;
+    font-family: Poppins;
+    padding-top: 2px;
+}
+.corosel-bacground{
+    background-color: #00354B;
+    background-size: contain;
+    background-image: url("SL-020520-27660-18\ 1.png");
+    background-size:cover ;
+    background-position: center;
+    background-repeat: no-repeat;
+   border-radius: 20px;
+    height: 370px;
+    
+
+
+}
+.cb{
+ 
+    width: 1260px;
+    margin-left: 140px;
+}
+.corosel-bacground2{
+ background-color:#C37400;
+    background-size: contain;
+    background-image: url("SL-020520-27660-18\ 1.png");
+    background-size:cover ;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+
+    height: 370px;
+
+
+
+}
+.content-corser{
+    color: aliceblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    margin-top: 60px;
+    
+}
+.icin{
+    margin-right: 20px;
+}
+.img-corseer{
+    margin-top: 40px;
+}
+.img-corseer img{
+    height: 300px;
+    width: 300px;
+    transform: rotate(-15deg);
+  
+
+
+}
+.imgi img{
+
+   height: 200px;
+    width: 200px;
+    transform: rotate(15deg); 
+    position: relative;
+    bottom: 210px;
+    left: 160px;
+}
+.flex-work{
+    gap: 29%;
+    
+}
+
+.box{
+    margin-left: 17%;
+    gap: 70px;
+}
+.boxing{
+  background-color:#EAE5E8;
+
+  font-family:Poppins;
+  font-size:20px;
+}
+.boxing p{
+    font-size: 16px;
+}
+.box-image1 img{
+    height: 180px;
+}
+.crop-box img{
+   position: relative;
+   top: 25px;
+   left: 215%;
+    
+}
+
+.img-pos img{
+    position: relative;
+    right: 30px;
+    top: 60px;
+
+}
+.last img{
+    position: relative;
+    bottom: 30px;
+}
+.card1{
+     background-color: #ECECEC;
+     position: relative;
+}
+.card-pos{
+    margin-left: 110px;
+     height: 180px;
+      width: 1160px;
+    margin-top: 20px;
+   
+}
+.text h5 p{
+margin-top: 45px;
+}
+.picpos{
+    position: relative;
+    left: 90px;
+}
+.lastpos{
+  margin-top: auto;
+}
+.text img{
+    position: relative;
+    left: 35%;
+}
+.iconbox{
+    height: 45px;
+    width: 350px;
+    border: 1 solid black;
+
+}
+.flek{
+    gap: 80%;
+    margin-left: 43px;
+}
+.flek h5{
+    position: relative;
+    left: 60px;
+}
+.flek button{
+    position: relative;
+    right: 60px;
+    background-color: #FFFFFF;
+   
+    
+}
+.secnd-content{
+    gap: 20%;
+}
+.crd{
+    border-top-left-radius:30%;
+    border-bottom-right-radius: 30%;
+    width: 18rem;
+}
+.crd:hover {
+border-bottom-left-radius:30%;
+    border-top-right-radius: 30%;
+        border-top-left-radius:0%;
+    border-bottom-right-radius: 0%;
+}
+.card-body button{
+    background-color:#00354B;
+    height:40px ;
+    width:280px ;
+    border-radius: 8px;
+    color: whitesmoke;
+    border: none;
+
+}
+.card-body p{
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.card-body h5{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 21px;
+    font-weight: bold;
+}
+.card-body span{
+    text-decoration: line-through;
+}
+.load button{
+    background-color: white;
+    border: 2 #00354B solid;
+    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+    margin-top: 40px;
+    margin-left: 45%;
+    margin-bottom: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+.center-text{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 150px;
+    text-transform: capitalize;
+}
+.new-box{
+    background-image: url("front-view-expensive-perfume-light-table-scent\ 1.png");
+    height: 550px;
+    width: 450px;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+     transition: width 2s;
+     position: relative;
+
+}
+.new-box:hover{
+
+    width: 600px;
+    
+}
+
+
+
+.new-box2{
+    background-image: url("caucasian-woman-applying-perfume-her-neck\ 1.png");
+    height: 550px;
+    width: 450px;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+     transition: width 2s;
+     position: relative;
+}
+
+.new-box2:hover{
+
+    width: 600px;
+    
+   
+    
+}
+
+
+.fonts2{
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    font-weight: bold;
+    position: relative;
+    top: 70%;
+    left: -180px;
+      transform: rotateZ(270deg);
+      
+
+}
+
+.text_fix{
+    position: absolute;
+    left: -5rem;
+}
+
+
+
+.new-box3{
+    background-image: url("small-perfume-bottle-with-black-lid-decorated-with-cinnamon-stick\ 1.png");
+  height: 550px;
+    width: 450px;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+     transition: width 2s;
+     position: relative;
+}
+
+.new-box3:hover{
+
+    width: 530px;
+    
+}
+
+
+
+.circle-content{
+height: 220px;
+width: 220px; 
+border: 1;
+border-color: black;
+border-style: solid;
+border-width: 2px;
+background-color: #ffffff;
+border-radius: 50%;
+
+}
+
+.card-last{
+ background-color: #B3EDF8;
+ 
+ 
+   
+ 
+
+}
+.cont{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.cont h5{
+    font-size: 24px;
+}
+.last-flex{
+    gap: 30%;
+}
+.but{
+    background-color: #00354B;
+    height: 50px;
+    width: 100px;
+    border: none;
+    color: rgb(240, 240, 240);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.flow{
+      width: 94%;
+  height: 550px;
+  aspect-ratio: 2/1;
+  padding: 20px 50px;
+  margin: auto;
+  border: solid black 2px;
+  overflow-x: scroll;
+
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  border: none;
+  margin-top: 30px;
+  scrollbar-width: none;
+  margin-left: 20px;
+
+}
+

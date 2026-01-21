@@ -1,0 +1,142 @@
+.content{
+
+    background-image: url("replce\ \(1\).png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 400px;
+    border-top-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    justify-items: center;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande';
+     color: rgb(255, 255, 255);
+
+
+}
+
+.content:hover{
+    border-top-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+    border-top-right-radius: 40%;
+    border-bottom-left-radius: 40%;
+}
+
+.main1{
+    justify-content: center;
+       margin-top: 150px;
+       gap: 3%;
+    
+}
+
+.content h1{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 55%;
+    text-transform: capitalize;
+
+
+}
+.login-form {
+    max-width: 450px;
+    width: 100%;
+}
+
+.social-acc {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.social-acc button {
+
+ 
+    height: 45px;
+    border: 2px solid black;
+    border-radius: 6px;
+    background: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.social-acc button i {
+    margin-right: 8px;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    color: #888;
+    font-size: 14px;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+}
+
+.divider span {
+    margin: 0 10px;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-box i {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #555;
+}
+
+.input-box input {
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-radius: 6px;
+    background: #e6e6e6;
+    padding-left: 45px;
+    font-size: 14px;
+}
+
+.form-check {
+    margin: 15px 0;
+    font-size: 14px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    height: 45px;
+    background: #003049;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button[type="submit"]:hover {
+    background: #002233;
+}
+
+.login-form p {
+    margin-top: 15px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.login-form p a {
+    font-weight: 200;
+}
+.forgot{
+margin-left: 120px;
+margin-bottom: 10px;
+}
+.content-2{
+    margin-top: 39px;
+}

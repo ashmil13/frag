@@ -1,0 +1,37 @@
+
+.sch{
+position: relative;
+right: 30px
+
+}
+.icons i{
+   gap: 30px;
+   position: relative;
+   right: 80%;
+
+}
+.bar , a{
+    position: relative;
+    left: 18%;
+}
+.head{
+    color: rgba(0, 53, 75, 1);
+font-family: 'Lucida Sans';
+font-size: 30px;
+ text-transform: capitalize;
+ font-weight: bolder;
+
+
+}
+
+.first p{
+    color: white;
+    font-family: Poppins;
+    padding-top: 2px;
+}
+.icin{
+    margin-right: 20px;
+}   
+.gos{
+    gap: 150px;
+}

@@ -1,0 +1,150 @@
+.imgi{
+    background-image: url("replce\ \(2\).png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 470px;
+    width: 540px;
+    border-top-right-radius: 40%;
+    border-bottom-left-radius: 40%;
+justify-items: center;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+transition: border-top-left-radius 1s , border-bottom-right-radius 1s ;
+}
+
+.imgi:hover{
+
+      border-top-right-radius: 0%;
+    border-bottom-left-radius: 0%;
+        border-top-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+
+}
+
+
+
+.main-1 {
+    justify-content: center;
+    margin-left: 150px;
+
+
+}
+
+.maino{
+    width: 800px;
+    height: 500px;
+
+    
+}
+
+ .yy{
+    width: 300px;
+    height: 55px;
+    border-radius: 12px;
+}
+  .ppi {
+   position: relative;
+   top: 200px;
+}
+ .imgi h1{
+    position: relative;
+    text-align: center;
+    top: 180px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.login-form {
+    max-width: 450px;
+    width: 100%;
+}
+
+.social-acc {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.social-acc button {
+    flex: 1;
+    height: 45px;
+    border: 2px solid black;
+    border-radius: 6px;
+    background: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.social-acc button i {
+    margin-right: 8px;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    color: #888;
+    font-size: 14px;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+}
+
+.divider span {
+    margin: 0 10px;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-box i {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #555;
+}
+
+.input-box input {
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-radius: 6px;
+    background: #e6e6e6;
+    padding-left: 45px;
+    font-size: 14px;
+}
+
+.form-check {
+    margin: 15px 0;
+    font-size: 14px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    height: 45px;
+    background: #003049;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button[type="submit"]:hover {
+    background: #002233;
+}
+
+.login-form p {
+    margin-top: 15px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.login-form p a {
+    font-weight: 200;
+}
