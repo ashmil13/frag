@@ -1,0 +1,179 @@
+@import "./variable.css";
+
+.dlte{
+    border:solid 1px red;
+    margin-left: 10px;
+   background-color:transparent;
+   color: rgb(224, 2, 2);
+ 
+    
+}
+.dlte:hover{
+ color: rgb(245, 239, 239);
+  background-color: red;
+     border:solid 1px red;
+
+}
+
+.sharebtn{
+    background-color: transparent;
+    border: solid 1px #007bff;
+    color: #007bff;
+
+
+}
+.sharebtn:hover{
+       background-color: #007bff;
+    border: solid 1px #007bff;
+    color: #ffffff;
+}
+.buybtn{
+    width: 100px;
+    border: solid 1px #28a745;
+    color: #28a745;
+
+
+}
+.buybtn:hover{
+    background-color: #28a745;
+    color: white;
+}
+
+
+
+/* admin page */
+.fist-box {
+   
+    border: solid 1px #000000;
+    height: 100%;
+    width: 100%;
+    margin: 10px;
+ 
+    
+}
+
+.secnd-box {
+   
+    border: solid 1px #000000;
+    height: 100%;
+    width: 100%;
+    margin: 10px;
+    margin-top: 100px;
+ 
+}
+
+/* admin navbar */
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: #0d6efd;
+}
+
+.prop{
+  margin: 30px 0;
+  padding: 17px;
+  font-size: medium;
+  
+
+}
+
+.logout-container {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  padding: 0 15px;
+}
+
+.logout-btn {
+  width: 100%;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #218838;
+}
+/* Dashbord */
+.main-boxing{
+    border:none;
+    background-color: aliceblue;
+    height: 730px;
+    width: 250px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    
+   
+}
+.top-daster{
+margin: 12px;
+color: #218838;
+}
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin: 15px;
+}
+
+.card-bdy{
+  width: 600px;
+ 
+}
+
+/* 
+products-admin */
+.tb-body{
+  width: 1200px;
+  height: 400px;
+   background-color: whitesmoke;
+}
+.exp-button{
+  border: none;
+  
+  width:100px ;
+  height:  50px;
+  margin-left: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+.tred{
+  height: 60px;
+  background-color:whitesmoke;
+ 
+
+}
+
+  /* prduct-details */
+  .card-by{
+    width: 1200px;
+    margin: 19px;
+  }
+
+  /* profile */
+  .prof{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .prof li{
+    padding: 10px;
+    margin: 10px 0;
+   
+    border: solid 1px #000000;
+    border-radius: 5px;
+   font-weight: bold;
+  }
+
