@@ -63,22 +63,19 @@ useEffect(() => {
                                 <th>Sale Price</th>
                                 <th>Description</th>
                                 <th>Actions</th>
-                                <th>Status</th>
                             </tr>
                         </thead>
                         <tbody>
                             {products.map((product, index) => (
                                 <tr key={product._id || index}>
                                     <td>{product.name}</td>
-                                    <td>{product.title}</td>
-                                    <td>${product.quality}</td>
-                                    <td>${product.salePrice}</td>
+                                    <td>{product.category?.name || 'N/A'}</td>
+                                    <td>{product.price}</td>
+                                    <td>{product.salePrice}</td>
                                     <td>{product.description}</td>
                                     <td>
-                                        
                                         <button className='btn btn-sm btn-danger' onClick={()=>HandleDelete(product._id )}>Delete</button>
                                     </td>
-                                    
                                 </tr>
                             ))}
                         </tbody>

@@ -10,4 +10,6 @@ export const ProductProvider = ({ children }) => {
 
 
 return<ProductContext.Provider value={{product}} >{children}</ProductContext.Provider>
+  
+
 }

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios';
 
-const API_URL = "http://localhost:3000/api/frag";
+const API_URL = "http://localhost:3000/api/Category";
 
 const Catergory = () => {
   const [formData, setFormData] = useState({

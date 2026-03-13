@@ -22,6 +22,7 @@ import lastimage from "./assets/lastimage.png";
 import { useContext } from "react";
 import { ProductContext } from "./Context/ProductContext";
 import { CartContext } from "./Context/Cartcontext"; 
+import { WhislistContext } from "./Context/WhislistContext";
 
 
 
@@ -29,6 +30,7 @@ import { CartContext } from "./Context/Cartcontext";
 const Home = () => {
   const {product} = useContext(ProductContext)
  const {addToCart} = useContext(CartContext)
+ const {addToWhislist} = useContext(WhislistContext)
 
   return (
 
@@ -390,7 +392,14 @@ const Home = () => {
             style={{ display: "inline-block" }}
           >
             {/* Image Card */}
-            <div className="crd shadow-lg text-center p-3"> 
+            <div className="crd shadow-lg text-center p-3 position-relative"> 
+              <button 
+                className="btn btn-light position-absolute top-0 end-0 m-2 rounded-circle shadow-sm d-flex justify-content-center align-items-center" 
+                style={{ width: "35px", height: "35px", zIndex: 1, padding: "0" }} 
+                onClick={() => addToWhislist(item.id)} 
+              >
+                <i className="fa-regular fa-heart text-danger"></i>
+              </button>
               <img
                 src={item.image}
                 className="img-fluid"
@@ -424,7 +433,9 @@ const Home = () => {
                 </span>
               </h5>
 
-             <button onClick={() => addToCart(item.id)} >Add to Cart</button>
+             <div className="d-flex justify-content-center gap-2">
+               <button className="btn" style={{backgroundColor: "#00354B", color: "white"}} onClick={() => addToCart(item.id)} >Add to Cart</button>
+             </div>
             </div>
           </div>
         ))}

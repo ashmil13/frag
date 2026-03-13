@@ -5,6 +5,7 @@ import Signup from "./Signup";
 import Home from "./home";
 import Product from "./Product";
 import Cart from "./Cart";
+import Whislist from "./whislist";
 import "./style/variable.css";
 import "./style/global.css";
 import "./App.css";
@@ -28,40 +29,41 @@ import ProfileProtectRouter from "./components/protoctRouter/ProfileProtectRoute
 function App() {
   return (
     <BrowserRouter>
-    
 
-     <Routes>
+
+      <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
- 
-       {/* <Route  element={<UserPRotectedRouter />}>
-        <Route path="/" element={<Home />} />
-        <Route path="/product" element={<Product />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/payment" element={<Payment />} />
-      </Route>   */}
-       
-      <Route  element={<AdminProtectedRouter />}>
-      <Route path="/" element={<Dashboard />} />
-      <Route path="/adminproducts" element={< AdminProducts/>} />
-      <Route path="/productsdetails" element={<ProductsDetails/>}/>
-      <Route path="/categories" element={<Catergory/>}/>
-      <Route path="/coustmers" element={<Coustmers/>}/>
-      </Route>
 
-      <Route element={<ProfileProtectRouter/>}>
-        <Route path="/profile" element={<Profile />} />
-        <Route path="/address" element={<Address />} />
-        <Route path="/order" element={<Order />} />
-      </Route>
-       
+        <Route element={<UserPRotectedRouter />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/product" element={<Product />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/whislist" element={<Whislist />} />
+          <Route path="/payment" element={<Payment />} />
+        </Route>
+
+        <Route element={<AdminProtectedRouter />}>
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/adminproducts" element={< AdminProducts />} />
+          <Route path="/productsdetails" element={<ProductsDetails />} />
+          <Route path="/categories" element={<Catergory />} />
+          <Route path="/coustmers" element={<Coustmers />} />
+        </Route>
+
+        <Route element={<ProfileProtectRouter />}>
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/address" element={<Address />} />
+          <Route path="/order" element={<Order />} />
+        </Route>
+
       </Routes>
-      
-   
 
-      
+
+
+
     </BrowserRouter>
- 
+
 
   );
 }

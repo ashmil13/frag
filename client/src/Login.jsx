@@ -9,7 +9,7 @@ const Login = () => {
       <div className="container vh-100 d-flex align-items-center justify-content-center">
         <div className="d-flex flex-wrap">
 
-          {/* Left Image Section */}
+         
           <div
             className="flex-fill position-relative p-3"
             style={{ maxWidth: "450px" }}
@@ -135,7 +135,7 @@ const Login = () => {
               </a>
 
               <p className="text-center mt-3">
-                Already have an account? <a href="/">Signup</a>
+                Already have an account? <a href="/user">User</a>
               </p>
 
             </form>

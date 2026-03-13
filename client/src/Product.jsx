@@ -4,10 +4,12 @@ import filter from "./assets/filter.png"
 import { useContext } from "react";
 import { ProductContext } from "./Context/ProductContext";
 import { CartContext } from "./Context/Cartcontext";
+import { WhislistContext } from "./Context/WhislistContext";
 
 function Product() { 
     const {product} = useContext(ProductContext)
     const {addToCart} = useContext(CartContext)
+    const {addToWhislist} = useContext(WhislistContext)
   return (
     <div>
         <div className="container-fluid">
@@ -51,7 +53,14 @@ function Product() {
 
           {product.map((item) => (
             <div className="main-card col" key={item.id}>
-              <div className="crdp shadow-lg">
+              <div className="crdp shadow-lg position-relative">
+                <button 
+                  className="btn btn-light position-absolute top-0 end-0 m-2 rounded-circle shadow-sm d-flex justify-content-center align-items-center" 
+                  style={{ width: "35px", height: "35px", zIndex: 1, padding: "0" }} 
+                  onClick={() => addToWhislist(item.id)} 
+                >
+                  <i className="fa-regular fa-heart text-danger"></i>
+                </button>
                 <img
                   src={item.image}
                   className="card-img-top"
@@ -71,8 +80,9 @@ function Product() {
                   <span>Rs {Math.round(item.price * 120)}</span>
                 </h5>
 
-                
+                <div className="d-flex justify-content-center gap-2">
                   <button className="bt" onClick={() => addToCart(item.id)} >Add to Cart</button>
+                </div>
                 
               </div>
             </div>

@@ -1,9 +1,53 @@
-import React from "react";
+import React, { useState, useEffect } from 'react'
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 import perfumeImg from "./assets/login.png";
 import googleIcon from "./assets/google.png";
 import facebookIcon from "./assets/facebook.png";
 
+const API_URL = "http://localhost:3000/api/user";
+
+
+
 const Signup = () => {
+  const navigate = useNavigate();
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    password: "",
+    confirmPassword: "",
+  });
+
+  const fetchuserdata = async () => {
+    const response = await axios.get(API_URL);
+    console.log(response.data);
+
+  };
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const response = await axios.post(API_URL, formData);
+    setFormData({
+      name: "",
+      email: "",
+      password: "",
+      confirmPassword: "",
+    });
+    fetchuserdata();
+  };
+
+  useEffect(() => {
+    fetchuserdata();
+  }, [])
+
   return (
     <div className="bg-white">
       <div className="container vh-100 d-flex align-items-center justify-content-center">
@@ -53,7 +97,7 @@ const Signup = () => {
 
           {/* Right Form Section */}
           <div className="flex-fill p-4 d-flex justify-content-center text-center">
-            <form className="w-100" style={{ maxWidth: "350px" }}>
+            <form onSubmit={handleSubmit} className="w-100" style={{ maxWidth: "350px" }}>
 
               {/* Social Buttons */}
               <div className="mt-n2 d-flex flex-row gap-3">
@@ -112,6 +156,9 @@ const Signup = () => {
                   type="text"
                   className="form-control"
                   placeholder="Enter your username"
+                  name='name'
+                  value={formData.name}
+                  onChange={handleChange}
                   style={{ backgroundColor: "#f0f0f0" }}
                 />
               </div>
@@ -122,9 +169,12 @@ const Signup = () => {
                 </span>
                 <input
                   type="email"
+                  name="email"
                   className="form-control"
                   placeholder="Enter your email"
                   style={{ backgroundColor: "#f0f0f0" }}
+                  value={formData.email}
+                  onChange={handleChange}
                 />
               </div>
 
@@ -134,9 +184,12 @@ const Signup = () => {
                 </span>
                 <input
                   type="password"
+                  name="password"
                   className="form-control"
                   placeholder="Enter your password"
                   style={{ backgroundColor: "#f0f0f0" }}
+                  value={formData.password}
+                  onChange={handleChange}
                 />
               </div>
 
@@ -146,9 +199,12 @@ const Signup = () => {
                 </span>
                 <input
                   type="password"
+                  name="confirmPassword"
                   className="form-control"
                   placeholder="Confirm your password"
                   style={{ backgroundColor: "#f0f0f0" }}
+                  value={formData.confirmPassword}
+                  onChange={handleChange}
                 />
               </div>
 
@@ -171,13 +227,13 @@ const Signup = () => {
               </div>
 
               {/* Button */}
-              <a
-                href="/signup"
+              <button
+                type="submit"
                 className="btn btn-primary w-100"
                 style={{ backgroundColor: "#00354B" }}
               >
                 Sign up
-              </a>
+              </button>
 
               <p className="text-center mt-3">
                 Already have an account? <a href="/login">Sign in</a>

@@ -5,13 +5,16 @@ import App from './App.jsx'
 import { CartProvider } from './Context/Cartcontext.jsx'
 import { ProductProvider } from './Context/ProductContext.jsx'
 import { PaymentProvider } from './Context/PaymentContest.jsx'
+import { WhislistProvider } from './Context/WhislistContext.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <ProductProvider>
     <CartProvider>
       <PaymentProvider>
-    <App /> 
+        <WhislistProvider>
+          <App /> 
+        </WhislistProvider>
       </PaymentProvider>
      </CartProvider>
     </ProductProvider>
